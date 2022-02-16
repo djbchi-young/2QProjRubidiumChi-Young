@@ -1,0 +1,72 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #fff3f3;
+}
+
+/*title*/
+header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/*bg color of navigation*/
+nav {
+  background-color: rgb(255, 80, 80);
+  overflow: hidden;
+}
+
+/*links in navigation*/
+nav a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/*hover on navigation links*/
+nav a:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+/*active link on navigation*/
+nav a.active {
+  background-color: rgb(255, 20, 20);
+  color: yellow;
+}
+
+/*articles*/
+article.card {
+  text-align: center;
+}
+
+article {
+  background-color:white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align:left;
+  width:60%;
+  float: left;
+}
+
+article.side {
+  float: right;
+  width:30%;
+}
+
+article.home {
+  float: none;
+  width:96.5%;
+  text-align: center;
+  border: 20px
+  margin: auto;
+}
+
+html {
+  zoom: 125%;
+}
