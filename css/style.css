@@ -18,7 +18,7 @@ nav {
 }
 
 /*links in navigation*/
-nav a {
+nav a, dropdown {
   float: left;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -29,29 +29,67 @@ nav a {
 }
 
 /*hover on navigation links*/
-nav a:hover {
+nav a:hover, .dropdown a:hover {
   background-color: rgb(255, 0, 0);
   color: white;
 }
 
 /*active link on navigation*/
-nav a.active {
+nav a.active, .dropdown a.active{
   background-color: rgb(255, 20, 20);
   color: yellow;
 }
 
-/*articles*/
-article.card {
-  text-align: center;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-article {
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 20, 20);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top:48px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(255, 20, 20);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*articles*/
+article{
   background-color:white;
   padding: 20px;
   margin-top: 20px;
   text-align:left;
   width:60%;
   float: left;
+}
+
+article.card {
+  text-align: center;
 }
 
 article.side {
@@ -65,6 +103,33 @@ article.home {
   text-align: center;
   border: 20px
   margin: auto;
+}
+
+/*social media links*/
+
+.laowhy {
+  border-radius: 50%;
+  float: left;
+}
+.laowhy:hover {
+  transform: scale(1.25,1.25);
+}
+
+.chinauncensored {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.chinauncensored:hover {
+  transform: scale(1.25,1.25);
+}
+
+.badiucao {
+  border-radius: 50%;
+  margin-left: 10px;
+  float: left;
+}
+.badiucao:hover {
+  transform: scale(1.25,1.25);
 }
 
 html {
